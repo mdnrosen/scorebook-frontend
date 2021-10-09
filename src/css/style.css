@@ -1,0 +1,154 @@
+:root {
+  --black: #12100E;
+  --darkGreen: #30321C;
+  --midGreen: #4A4B2F;
+  --gold: #6B654B;
+  --base: #FFFCF1;
+}
+
+
+
+
+body {
+  height: 97vh;
+  width: 100vw;
+  background-color: var(--base);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'blanch_caps' sans-serif;
+  /* background: #F5F5F5; */
+}
+
+
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COLOURS */
+
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+}
+
+.formGroup input {
+  height: 30px;
+  margin: 5px;
+  /* outline: green; */
+}
+.formGroup input[type="submit"] {
+ background-color: var(--midGreen);
+ opacity: 0.8;
+ color: var(--base);
+ outline: none;
+ border: none;
+}
+.formGroup input[type="submit"]:hover {
+  background-color: var(--midGreen);
+  opacity: 1;
+ 
+  cursor: pointer;
+}
+
+.Login, .Register form h3 {
+  text-align: center;
+}
+
+
+.Login, .Register {
+  background-color: #FFFFF2;
+  height: max-content;
+  padding: 20px;
+  margin: 10% auto;
+  width: 50%;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+  .Login, .Register {
+    width: 100%;
+
+  }
+}
+
+
+h1, h2, h3, p {
+  margin: 0;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+
+
+.FullPage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header_title {
+  margin-right: 20px;
+}
+
+.CreateInns header {
+  height: 10%;
+  background-color: var(--midGreen);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.CreateInns .wrapper {
+    height: 85%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+}
+
+.wrapper .middleData {
+  display: grid;
+  grid-template-rows: repeat (3, 1fr );
+  margin: 5px;
+  /* border-left: 1px solid var(--darkGreen);
+  border-right: 1px solid var(--darkGreen) */
+}
+
+.team {
+  height: 100%;
+  width: 90%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 11fr;
+  padding: 5px;
+
+}
+
+.team .playerSelect {
+  display: grid;
+  grid-template-rows: repeat(11, 1fr );
+}
+.team .playerSelect .playerRow {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+}
+
+
+
+
+
+
+
+
+
